@@ -144,7 +144,8 @@ for i in range(thread_nums):
     t = threading.Thread(target=ins_driver, args=(i, 400000))
     t.start()
 ```
-![](2017-12-01-16-16-19.png)
+![image.png](http://upload-images.jianshu.io/upload_images/4033700-dda526bdfcc5c759.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 
 以上脚本创建10个线程，10个线程插入4万条数据。耗费150.18s执行完,总共插入40万条数据
@@ -171,9 +172,11 @@ select *,`getDistance`(134.38753,18.56734,`lng`,`lat`) as dis from driver ORDER 
 
 我测试了从1万到10万间隔1万和从10万到90万每间隔10万测试的结果变化
 
-![](2017-12-01-17-08-44.png)
+![image.png](http://upload-images.jianshu.io/upload_images/4033700-c40f60c1ef7b3f18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ## 结论
 
 - 此方案在数据量达到3万条查询耗时就会超过1秒
 - 大约每增加1万条就会增加0.4秒的耗时
+
