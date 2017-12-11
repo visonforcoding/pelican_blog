@@ -162,12 +162,12 @@ cpu: intel core i5
 
 硬盘: 500g 固态硬盘
 
-测试下查找距离(134.38753,18.56734)这个坐标点最近的10个司机
+测试下查找距离(134.38753,18.56734)这个坐标点20公里的司机
 
 ```sql
-select *,`getDistance`(134.38753,18.56734,`lng`,`lat`) as dis from driver ORDER BY dis limit 10
+select *,`getDistance`(134.38753,18.56734,`lng`,`lat`) as dis from driver where `getDistance`(134.38753,18.56734,`lng`,`lat`) < 20000;
 ```
-- 耗时：18.0s
+- 耗时：12.0s
 - explain:全表扫描
 
 我测试了从1万到10万间隔1万和从10万到90万每间隔10万测试的结果变化
