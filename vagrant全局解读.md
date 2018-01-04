@@ -53,6 +53,8 @@ echo 'export LANG="zh_CN.UTF-8"' >> ~/.bashrc
 yum install -y gcc zlib-devel openssl-devel
 yum install -y vim
 yum install -y wget
+yum install -y man
+cp /usr/share/locale/en/LC_MESSAGES/man /usr/share/locale/zh/LC_MESSAGES/
 #安装几个源
 # rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm 已停止服务
 wget http://www.atomicorp.com/installers/atomic
