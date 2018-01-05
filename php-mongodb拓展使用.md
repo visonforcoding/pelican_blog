@@ -21,3 +21,7 @@ Category: php
 			$points[] = $document;
 		}
 ```
+
+```php
+   echo 'hello,world';
+```
