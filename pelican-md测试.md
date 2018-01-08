@@ -3,11 +3,6 @@ Date: 2018-01-08 17:36:00
 Category: pelican
 
 ## to-do-list
-Title: pelican-md测试
-Date: 2018-01-08 17:36:00
-Category: pelican
-
-## to-do-list
 
 - [ ] 2018年书单
   - [x] 浪潮之巅上
