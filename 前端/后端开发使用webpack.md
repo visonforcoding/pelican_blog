@@ -100,3 +100,7 @@ node_modules/.bin/webpack-dev-server #运行dev-server
 - 为利用es6 module特性进行开发提供了良好的工具，大大的提高了开发效率
 - 帮前端开发搭建了一个webserver,构建了一个比较舒适的开发环境
 - 热更新机制减去了每次手动编译的麻烦
+
+用专业术语来解释
+
+- 动态打包(dynamically bundle)
