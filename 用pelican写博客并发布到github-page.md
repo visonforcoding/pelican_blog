@@ -41,7 +41,7 @@ code hello-world.md  ## 用vs-code创建md并打开 我设置了cmd启动vscode
 ```md
 Title: hello world
 Date: 2010-12-03 10:20
-Category: Review
+Category: Test
 
 hello,world
 ```
