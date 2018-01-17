@@ -1,6 +1,6 @@
 Title: nginx+php-fpm负载均衡和性能测试
 Date: 2017-07-27 10:34
-Category: 其他
+Category: linux
 
 >一直知道nginx本身能进行负载均衡，但没有测试过,今天实验了下,以下是笔记记录
 
