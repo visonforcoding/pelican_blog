@@ -1,6 +1,6 @@
 Title: pelican-md测试
 Date: 2018-01-08 17:36:00
-Category: pelican
+Category: python
 
 ## to-do-list
 

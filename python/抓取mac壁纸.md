@@ -1,6 +1,6 @@
 Title: 抓取mac壁纸
 Date: 2017-11-23 14:19
-Category: 其他
+Category: python
 >如图，一个好的工作环境，可以让心情好不少
 
 ![image.png](http://upload-images.jianshu.io/upload_images/4033700-3a9f37b2be736bb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

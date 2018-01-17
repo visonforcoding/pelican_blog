@@ -1,6 +1,6 @@
 Title: vagrant全局解读
 Date: 2017-12-26 13:45
-Category: 其他
+Category: linux
 >利用vagrant 进行本地实验是一个非常好的选择
 
 ## vagrant box

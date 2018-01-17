@@ -1,6 +1,6 @@
 Title: git钩子php代码编码格式修复
 Date: 2017-12-19 13:45
-Category: 其他
+Category: php
 
 >以下是钩子脚本，放在.git/hooks/pre-commit
 
