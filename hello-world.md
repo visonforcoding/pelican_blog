@@ -5,3 +5,8 @@ Category: 其他
 ```python
 print 'hello,world'
 ```
+
+```php
+<?php
+   echo 'hello,world';
+```
