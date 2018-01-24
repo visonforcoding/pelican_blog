@@ -34,3 +34,51 @@ UTF-8（8-bit Unicode Transformation Format）是一种针对Unicode的可变长
 ## coding=utf-8
 
 参考[https://www.python.org/dev/peps/pep-0263/](!https://www.python.org/dev/peps/pep-0263/) 为了申明python 源代码文件的编码格式，默认是ascii.所以当源代码没有申明utf-8时候，就写入中文会报错。python解释器会不认识这个中文字符。
+
+
+## 实例
+
+如何解释
+
+```python
+# coding=utf-8
+import sys
+import chardet
+
+print(sys.getdefaultencoding())
+
+a = 'abc'
+
+print(type(a))
+print(chardet.detect(a))
+
+b = a.decode('ascii')
+
+print(type(b))
+
+
+c = '中文'
+
+print(type(c))
+print(chardet.detect(c))
+
+
+m = b.encode('utf-8')
+print(type(m))
+print(chardet.detect(m))
+
+n = u'abc'
+
+print(type(n))
+
+x = n.encode(encoding='utf-8')
+
+print(type(x))
+print(chardet.detect(x))
+
+
+```
+
+结果
+
+![2018-01-24-17-53-46](http://img.rc5j.cn/2018-01-24-17-53-46.png)
