@@ -1,6 +1,6 @@
 Title: funkload性能测试
 Date: 2017-12-26 13:45
-Category: 其他
+Category: python
 
 ## 安装
 
@@ -51,6 +51,46 @@ class Simple(FunkLoadTestCase):
           description="Login as scott")
 if __name__ in ('main', '__main__'):
     unittest.main()
+```
+
+配置文件
+
+```conf
+# main section for the test case
+[main]
+title=Simple FunkLoad tests
+description=Simply testing a default static page
+url=http://nofwork.dev/
+
+# a section for each test
+[test_simple]
+description=Access the main URL %(nb_time)s times
+
+nb_time=20
+
+# <<snip>>
+# a section to configure the test mode
+[ftest]
+log_to = console file
+log_path = simple-test.log
+result_path = simple-test.xml
+sleep_time_min = 0
+sleep_time_max = 0
+
+# a section to configure the bench mode
+[bench]
+url =  xxx.abc.com
+index_url = xxx.abc.com/foo/bar
+cycles = 50:75:100:125  ##并发数 50 75 100 125
+duration = 10   ##持续时间
+startup_delay = 0.01
+sleep_time = 0.01
+cycle_time = 1
+log_to =
+log_path = simple-bench.log
+result_path = simple-bench.xml
+sleep_time_min = 0
+sleep_time_max = 0.5
 ```
 
 执行命令

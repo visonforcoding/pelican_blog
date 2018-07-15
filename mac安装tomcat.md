@@ -10,3 +10,11 @@ keywords:
 brew install tomcat
 
 ```
+
+## 运行
+
+```
+catalina start
+```
+
+访问http://localhost:8080
