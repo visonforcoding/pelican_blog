@@ -63,6 +63,8 @@ docker-compose up -d
 |ps|列出所有容器|
 |down|停止并删除容器，镜像，挂载|
 |start|启动服务|
+|stop|停止服务|
+|restart|重启服务|
 
 
 **第一次使用up,之后使用start,如果再次使用up将会重新创建容器，一些对容器的修改将会丢失**
@@ -81,4 +83,30 @@ docker-compose up -d
 ```bash
 apt-get update  ##更新元
 apt-get install procps  ## 安装 ps
+```
+
+安装php-rdkafka拓展
+
+```bash
+apt-get install wget
+wget https://github.com/edenhill/librdkafka/archive/master.zip
+
+apt-get install unzip
+
+unzip master.zip
+
+cd librdkafka
+
+./configure 
+
+make
+
+make install 
+
+pecl install http://pecl.php.net/get/rdkafka-3.0.4.tgz
+
+#在php.ini 配置启用 rdkafka拓展
+
+
+
 ```
