@@ -83,6 +83,8 @@ docker-compose up -d
 ```bash
 apt-get update  ##更新元
 apt-get install procps  ## 安装 ps
+apt install net-tools       # ifconfig 
+apt install iputils-ping     # ping
 ```
 
 安装php-rdkafka拓展
